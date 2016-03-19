@@ -1,3 +1,11 @@
+## My Customizations ##
+connection.query calculates the round trip duration of the query and passes it to the callback in parameter 'duration'
+```
+connection.query(query, function(err, rows, fields, duration) {
+  console.log('Query completed in: %d', duration);
+});
+```
+
 # mysql
 
 [![NPM Version][npm-image]][npm-url]
